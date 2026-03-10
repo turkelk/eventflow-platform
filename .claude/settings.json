@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "dotnet build",
+      "dotnet test",
+      "dotnet run",
+      "dotnet ef migrations add *",
+      "dotnet ef database update",
+      "docker compose up",
+      "docker compose down",
+      "docker compose build",
+      "npm run dev",
+      "npm run build",
+      "npm test",
+      "npm install *",
+      "npx *"
+    ],
+    "deny": [
+      "rm -rf",
+      "dotnet ef database drop",
+      "dotnet ef migrations remove",
+      "git push --force",
+      "git reset --hard",
+      "git checkout .",
+      "DROP DATABASE",
+      "DROP SCHEMA",
+      "TRUNCATE"
+    ]
+  }
+}
